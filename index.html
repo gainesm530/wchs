@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	
+	<meta name="msapplication-TileColor" content="#ffffff">
+	
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta charset="utf-8">
+	
+	<title>WCHS</title>
+	
+	<link href="main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+<img src="WCHS_Logo.png" alt="" width="500" height="500" id="wchslogo"/>
+
+<h1 id="header1"> Morning Show Staff</h1>
+
+<img src="SpectrumSports.jpg" alt="" width="367" height="1500" id="banner"/>
+
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td><img src="IMG_2546.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2547.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2548.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2549.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2550.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2551.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2554.JPG" width="1" height="400" alt=""/></td>
+    </tr>
+    <tr>
+      <td>Shyanne Waller</td>
+      <td>Miles Scott</td>
+      <td>Lillian Shaw</td>
+      <td>Abigail Graham</td>
+      <td>Jessica Jones</td>
+      <td>Amanda Krom</td>
+      <td>Braden Edmunds</td>
+    </tr>
+	</tbody>
+	</table>
+<table width="200" border="1">
+  <tbody>
+    <tr>
+	  <td><img src="IMG_2555.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2556.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2557.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2558.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2559.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2560.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2583.JPG" width="1" height="400" alt=""/></td>
+      <td><img src="IMG_2552.JPG" width="1" height="400" alt=""/></td>
+    </tr>
+    <tr>
+      <td>Ethan Lopez</td>
+      <td>Joshua Dunn</td>
+      <td>Allie Fisher</td>
+      <td>Haven McClure</td>
+      <td>Tim Brown</td>
+      <td>Ben Hale</td>
+      <td>Justine McClimont</td>
+      <td>Micheal Gill</td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	
+</script>
+
+<iframe id="youtube_video" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+
+<script>
+var channelID = "UCQ8Lzvb0mSz0p5XAmZoW1zw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+});
+	
+</script>
+
+<a href="http://instagram.com/wchsnews2017">Instagram</a>
+
+<a href="http://twitter.com/wchsnewsch4">Twitter</a>
+
+<a href="https://facebook.com/chswchsnews">Facebook</a>
+
+<img src="fspa.jpg" alt="" width="70000" height="124" id="fspa">
+
+</html>
+
